@@ -1,0 +1,22 @@
+# Source: nodeapp3/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    meta.helm.sh/release-name: 'nodeapp3'
+  name: nodeapp3
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+    - http:
+        paths:
+          - pathType: ImplementationSpecific
+            backend:
+              service:
+                name: nodeapp3
+                port:
+                  number: 80
+      host: nodeapp3-jx-production.34.132.47.65.nip.io

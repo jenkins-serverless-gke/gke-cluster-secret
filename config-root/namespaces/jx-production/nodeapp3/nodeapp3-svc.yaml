@@ -1,0 +1,20 @@
+# Source: nodeapp3/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nodeapp3
+  labels:
+    chart: "nodeapp3-0.0.1"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'nodeapp3'
+  namespace: jx-production
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+      name: http
+  selector:
+    app: nodeapp3-nodeapp3
