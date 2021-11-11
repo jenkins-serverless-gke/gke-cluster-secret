@@ -16,6 +16,14 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-serverless-gke/nodeapp3
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jenkins-serverless-gke/ttc-dashboard-ui
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - serverless-bot-726/twitter-dashboard-ui
       require_self_approval: true
     cat: {}
@@ -39,6 +47,16 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       jenkins-serverless-gke/nodeapp-night:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      jenkins-serverless-gke/nodeapp3:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      jenkins-serverless-gke/ttc-dashboard-ui:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -102,6 +120,38 @@ data:
       - cat
       - dog
       - pony
+      jenkins-serverless-gke/nodeapp3:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-serverless-gke/ttc-dashboard-ui:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       serverless-bot-726/twitter-dashboard-ui:
       - approve
       - assign
@@ -135,6 +185,12 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-serverless-gke/nodeapp
+      trusted_org: todo
+    - repos:
+      - jenkins-serverless-gke/nodeapp3
+      trusted_org: todo
+    - repos:
+      - jenkins-serverless-gke/ttc-dashboard-ui
       trusted_org: todo
     - repos:
       - serverless-bot-726/twitter-dashboard-ui
