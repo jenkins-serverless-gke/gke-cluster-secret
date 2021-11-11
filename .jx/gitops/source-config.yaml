@@ -11,6 +11,12 @@ spec:
     - name: nodeapp
     - name: nodeapp-night
     scheduler: in-repo
+  - owner: serverless-bot-726
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: twitter-dashboard-ui
+    scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess
