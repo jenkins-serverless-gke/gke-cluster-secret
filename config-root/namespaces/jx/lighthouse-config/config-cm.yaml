@@ -10,6 +10,7 @@ data:
         jenkins-serverless-gke/gke-cluster-secret: true
         jenkins-serverless-gke/nodeapp: true
         jenkins-serverless-gke/nodeapp-night: true
+        jenkins-serverless-gke/ttc-dashboard-ui: true
         serverless-bot-726/twitter-dashboard-ui: true
     plank: {}
     pod_namespace: jx
@@ -25,6 +26,7 @@ data:
         jenkins-serverless-gke/gke-cluster-secret: merge
         jenkins-serverless-gke/nodeapp: merge
         jenkins-serverless-gke/nodeapp-night: merge
+        jenkins-serverless-gke/ttc-dashboard-ui: merge
         serverless-bot-726/twitter-dashboard-ui: merge
       queries:
       - labels:
@@ -39,6 +41,7 @@ data:
         - jenkins-serverless-gke/gke-cluster-secret
         - jenkins-serverless-gke/nodeapp-night
         - jenkins-serverless-gke/nodeapp
+        - jenkins-serverless-gke/ttc-dashboard-ui
         - serverless-bot-726/twitter-dashboard-ui
       - labels:
         - updatebot
@@ -52,6 +55,7 @@ data:
         - jenkins-serverless-gke/gke-cluster-secret
         - jenkins-serverless-gke/nodeapp-night
         - jenkins-serverless-gke/nodeapp
+        - jenkins-serverless-gke/ttc-dashboard-ui
         - serverless-bot-726/twitter-dashboard-ui
       target_url: http://lighthouse-jx.34.132.47.65.nip.io/merge/status
 kind: ConfigMap
