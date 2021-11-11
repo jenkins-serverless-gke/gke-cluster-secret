@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: nodeapp-night
   labels:
-    chart: "nodeapp-night-0.0.5"
+    chart: "nodeapp-night-0.0.6"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'nodeapp-night'
