@@ -5,7 +5,7 @@ metadata:
   name: nodeapp3-nodeapp3
   labels:
     draft: draft-app
-    chart: "nodeapp3-0.0.1"
+    chart: "nodeapp3-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'nodeapp3'
@@ -25,11 +25,11 @@ spec:
       serviceAccountName: nodeapp3-nodeapp3
       containers:
         - name: nodeapp3
-          image: "gcr.io/compute-project-183119/nodeapp3:0.0.1"
+          image: "gcr.io/compute-project-183119/nodeapp3:0.0.2"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.1
+              value: 0.0.2
           envFrom: null
           ports:
             - name: http
