@@ -24,5 +24,7 @@ releases:
   version: 0.0.1
   name: nodeapp3
   namespace: jx-staging
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
