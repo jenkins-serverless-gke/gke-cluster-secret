@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: nodeapp
+    - name: nodeapp-night
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'

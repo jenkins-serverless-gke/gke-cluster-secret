@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-serverless-gke
+    provider: github
+    repository: nodeapp
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-serverless-gke-nodeapp
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jenkins-serverless-gke/nodeapp.git
+  org: jenkins-serverless-gke
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: nodeapp
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jenkins-serverless-gke/nodeapp

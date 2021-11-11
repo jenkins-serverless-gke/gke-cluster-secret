@@ -8,6 +8,8 @@ data:
     in_repo_config:
       enabled:
         jenkins-serverless-gke/gke-cluster-secret: true
+        jenkins-serverless-gke/nodeapp: true
+        jenkins-serverless-gke/nodeapp-night: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +22,8 @@ data:
         skip-unknown-contexts: false
       merge_method:
         jenkins-serverless-gke/gke-cluster-secret: merge
+        jenkins-serverless-gke/nodeapp: merge
+        jenkins-serverless-gke/nodeapp-night: merge
       queries:
       - labels:
         - approved
@@ -31,6 +35,8 @@ data:
         - needs-rebase
         repos:
         - jenkins-serverless-gke/gke-cluster-secret
+        - jenkins-serverless-gke/nodeapp-night
+        - jenkins-serverless-gke/nodeapp
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +47,8 @@ data:
         - needs-rebase
         repos:
         - jenkins-serverless-gke/gke-cluster-secret
+        - jenkins-serverless-gke/nodeapp-night
+        - jenkins-serverless-gke/nodeapp
       target_url: http://lighthouse-jx.34.132.47.65.nip.io/merge/status
 kind: ConfigMap
 metadata:
