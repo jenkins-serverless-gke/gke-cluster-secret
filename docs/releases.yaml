@@ -45,17 +45,17 @@
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx-staging/jx-verify
   - apiVersion: v1
-    appVersion: 0.0.2
+    appVersion: 0.0.3
     description: A Helm chart for Kubernetes
-    firstDeployed: "2021-11-11T01:54:07Z"
+    firstDeployed: "2021-11-11T01:50:57Z"
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    lastDeployed: "2021-11-11T01:54:07Z"
+    lastDeployed: "2021-11-11T01:50:57Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=compute-project-183119&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-inviting-mongoose%2Fnamespace_name%2Fjx-staging%2Fcontainer_name%2Fnodeapp-night&dateRangeUnbound=both
     name: nodeapp-night
     repositoryName: dev
     repositoryUrl: http://chartmuseum-jx.34.132.47.65.nip.io
     resourcePath: config-root/namespaces/jx-staging/nodeapp-night
-    version: 0.0.2
+    version: 0.0.3
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
