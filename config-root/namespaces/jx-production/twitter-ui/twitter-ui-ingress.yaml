@@ -1,0 +1,22 @@
+# Source: twitter-ui/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    meta.helm.sh/release-name: 'twitter-ui'
+  name: twitter-ui
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+    - http:
+        paths:
+          - pathType: ImplementationSpecific
+            backend:
+              service:
+                name: twitter-ui
+                port:
+                  number: 80
+      host: twitter-ui-jx-production.34.132.47.65.nip.io
