@@ -6,11 +6,17 @@ environments:
 repositories:
 - name: jxgh
   url: https://jenkins-x-charts.github.io/repo
+- name: dev
+  url: http://chartmuseum-jx.34.132.47.65.nip.io
 releases:
 - chart: jxgh/jx-verify
   name: jx-verify
   namespace: jx-staging
   values:
   - jx-values.yaml
+- chart: dev/nodeapp-night
+  version: 0.0.1
+  name: nodeapp-night
+  namespace: jx-staging
 templates: {}
 renderedvalues: {}
