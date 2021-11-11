@@ -20,5 +20,9 @@ releases:
   namespace: jx-production
   values:
   - jx-values.yaml
+- chart: dev/nodeapp3
+  version: 0.0.1
+  name: nodeapp3
+  namespace: jx-production
 templates: {}
 renderedvalues: {}
