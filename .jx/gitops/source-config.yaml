@@ -10,6 +10,7 @@ spec:
     repositories:
     - name: nodeapp
     - name: nodeapp-night
+    - name: ttc-dashboard-ui
     scheduler: in-repo
   - owner: serverless-bot-726
     provider: https://github.com
