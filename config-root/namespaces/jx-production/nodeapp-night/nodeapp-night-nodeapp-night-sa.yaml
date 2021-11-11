@@ -1,0 +1,10 @@
+# Source: nodeapp-night/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: nodeapp-night-nodeapp-night
+  annotations:
+    meta.helm.sh/release-name: 'nodeapp-night'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
