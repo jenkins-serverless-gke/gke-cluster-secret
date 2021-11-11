@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: serverless-bot-726
+    provider: github
+    repository: twitter-dashboard-ui
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: serverless-bot-726-twitter-dashboard-ui
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/serverless-bot-726/twitter-dashboard-ui.git
+  org: serverless-bot-726
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: twitter-dashboard-ui
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/serverless-bot-726/twitter-dashboard-ui
