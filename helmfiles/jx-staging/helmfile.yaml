@@ -26,5 +26,9 @@ releases:
   namespace: jx-staging
   values:
   - jx-values.yaml
+- chart: dev/twitter-ui
+  version: 0.0.1
+  name: twitter-ui
+  namespace: jx-staging
 templates: {}
 renderedvalues: {}
