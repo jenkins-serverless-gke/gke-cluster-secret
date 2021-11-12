@@ -1,0 +1,20 @@
+# Source: twitter-angular-dashboard/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: twitter-angular-dashboard
+  labels:
+    chart: "twitter-angular-dashboard-0.0.4"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'twitter-angular-dashboard'
+  namespace: jx-staging
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+      name: http
+  selector:
+    app: twitter-angular-dashboard-twitter-angular-dashboard
