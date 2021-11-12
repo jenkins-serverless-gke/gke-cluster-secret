@@ -33,7 +33,7 @@ releases:
   values:
   - jx-values.yaml
 - chart: dev/twitter-angular-dashboard
-  version: 0.0.4
+  version: 0.0.5
   name: twitter-angular-dashboard
   namespace: jx-production
   values:
