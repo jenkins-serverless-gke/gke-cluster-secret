@@ -19,6 +19,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: nodenewapp
     - name: twitter-dashboard-ui
     scheduler: in-repo
   slack:
