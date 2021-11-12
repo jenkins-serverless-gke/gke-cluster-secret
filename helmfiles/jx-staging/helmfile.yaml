@@ -36,5 +36,7 @@ releases:
   version: 0.0.4
   name: twitter-angular-dashboard
   namespace: jx-staging
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
