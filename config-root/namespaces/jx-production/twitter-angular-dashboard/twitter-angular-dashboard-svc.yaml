@@ -4,9 +4,10 @@ kind: Service
 metadata:
   name: twitter-angular-dashboard
   labels:
-    chart: "twitter-angular-dashboard-0.0.10"
+    chart: "twitter-angular-dashboard-0.0.11"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
+    fabric8.io/expose: "true"
     meta.helm.sh/release-name: 'twitter-angular-dashboard'
   namespace: jx-production
 spec:
