@@ -53,17 +53,17 @@
     resourcePath: config-root/namespaces/jx-production/twitter-ui
     version: 0.0.1
   - apiVersion: v1
-    appVersion: 0.0.7
+    appVersion: 0.0.8
     description: A Helm chart for Kubernetes
-    firstDeployed: "2021-11-13T20:05:00Z"
+    firstDeployed: "2021-11-14T02:16:08Z"
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    lastDeployed: "2021-11-13T20:05:00Z"
+    lastDeployed: "2021-11-14T02:16:08Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=compute-project-183119&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-inviting-mongoose%2Fnamespace_name%2Fjx-production%2Fcontainer_name%2Ftwitter-angular-dashboard&dateRangeUnbound=both
     name: twitter-angular-dashboard
     repositoryName: dev
     repositoryUrl: http://chartmuseum-jx.34.132.47.65.nip.io
     resourcePath: config-root/namespaces/jx-production/twitter-angular-dashboard
-    version: 0.0.7
+    version: 0.0.8
 - namespace: jx-staging
   path: helmfiles/jx-staging/helmfile.yaml
   releases:

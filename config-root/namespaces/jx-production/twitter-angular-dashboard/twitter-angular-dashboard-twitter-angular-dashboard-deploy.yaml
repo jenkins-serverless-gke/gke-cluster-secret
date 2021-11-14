@@ -5,7 +5,7 @@ metadata:
   name: twitter-angular-dashboard-twitter-angular-dashboard
   labels:
     draft: draft-app
-    chart: "twitter-angular-dashboard-0.0.7"
+    chart: "twitter-angular-dashboard-0.0.8"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'twitter-angular-dashboard'
@@ -25,11 +25,11 @@ spec:
       serviceAccountName: twitter-angular-dashboard-twitter-angular-dashboard
       containers:
         - name: twitter-angular-dashboard
-          image: "gcr.io/compute-project-183119/twitter-angular-dashboard:0.0.7"
+          image: "gcr.io/compute-project-183119/twitter-angular-dashboard:0.0.8"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.7
+              value: 0.0.8
           envFrom: null
           ports:
             - name: http
@@ -52,9 +52,9 @@ spec:
           resources:
             limits:
               cpu: 400m
-              memory: 1Gi
+              memory: 2Gi
             requests:
               cpu: 200m
-              memory: 1Gi
+              memory: 2Gi
       terminationGracePeriodSeconds:
       imagePullSecrets:
