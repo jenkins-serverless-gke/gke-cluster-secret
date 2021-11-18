@@ -1,14 +1,14 @@
-# Source: nodeapp-night/templates/service.yaml
+# Source: twitter-ui/templates/service.yaml
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodeapp-night
+  name: twitter-ui
   labels:
-    chart: "nodeapp-night-0.0.8"
+    chart: "twitter-ui-0.0.1"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
-    meta.helm.sh/release-name: 'nodeapp-night'
-  namespace: jx-staging
+    meta.helm.sh/release-name: 'twitter-ui'
+  namespace: jx-production
 spec:
   type: ClusterIP
   ports:
@@ -17,4 +17,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app: nodeapp-night-nodeapp-night
+    app: twitter-ui-twitter-ui

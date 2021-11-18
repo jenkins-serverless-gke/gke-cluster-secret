@@ -1,35 +1,35 @@
-# Source: nodeapp-night/templates/deployment.yaml
+# Source: nodeapp3/templates/deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodeapp-night-nodeapp-night
+  name: nodeapp3-nodeapp3
   labels:
     draft: draft-app
-    chart: "nodeapp-night-0.0.8"
+    chart: "nodeapp3-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
-    meta.helm.sh/release-name: 'nodeapp-night'
+    meta.helm.sh/release-name: 'nodeapp3'
     wave.pusher.com/update-on-config-change: 'true'
   namespace: jx-production
 spec:
   selector:
     matchLabels:
-      app: nodeapp-night-nodeapp-night
+      app: nodeapp3-nodeapp3
   replicas: 1
   template:
     metadata:
       labels:
         draft: draft-app
-        app: nodeapp-night-nodeapp-night
+        app: nodeapp3-nodeapp3
     spec:
-      serviceAccountName: nodeapp-night-nodeapp-night
+      serviceAccountName: nodeapp3-nodeapp3
       containers:
-        - name: nodeapp-night
-          image: "gcr.io/compute-project-183119/nodeapp-night:0.0.8"
+        - name: nodeapp3
+          image: "gcr.io/compute-project-183119/nodeapp3:0.0.2"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.8
+              value: 0.0.2
           envFrom: null
           ports:
             - name: http

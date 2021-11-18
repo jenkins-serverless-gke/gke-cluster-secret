@@ -1,0 +1,10 @@
+# Source: twitter-angular-dashboard/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: twitter-angular-dashboard-twitter-angular-dashboard
+  annotations:
+    meta.helm.sh/release-name: 'twitter-angular-dashboard'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'

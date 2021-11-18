@@ -1,14 +1,14 @@
-# Source: nodeapp-night/templates/service.yaml
+# Source: nodeapp3/templates/service.yaml
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodeapp-night
+  name: nodeapp3
   labels:
-    chart: "nodeapp-night-0.0.8"
+    chart: "nodeapp3-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
-    meta.helm.sh/release-name: 'nodeapp-night'
-  namespace: jx-staging
+    meta.helm.sh/release-name: 'nodeapp3'
+  namespace: jx-production
 spec:
   type: ClusterIP
   ports:
@@ -17,4 +17,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app: nodeapp-night-nodeapp-night
+    app: nodeapp3-nodeapp3

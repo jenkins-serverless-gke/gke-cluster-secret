@@ -10,6 +10,18 @@ spec:
     repositories:
     - name: nodeapp
     - name: nodeapp-night
+    - name: nodeapp3
+    - name: ttc-dashboard-ui
+    - name: twitter-angular-dashboard
+    - name: twitter-ui
+    scheduler: in-repo
+  - owner: serverless-bot-726
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: activiti-gke
+    - name: nodenewapp
+    - name: twitter-dashboard-ui
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
