@@ -13,6 +13,7 @@ spec:
     - name: nodeapp
     - name: nodeapp-night
     - name: nodeapp3
+    - name: theNodeApp
     - name: ttc-dashboard-ui
     - name: twitter-angular-dashboard
     - name: twitter-ui
