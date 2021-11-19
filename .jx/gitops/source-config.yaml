@@ -10,6 +10,7 @@ spec:
     repositories:
     - name: gcloud-activiti
     - name: gcloud-again
+    - name: gke-nine-oclock
     - name: nodeapp
     - name: nodeapp-night
     - name: nodeapp3
