@@ -10,6 +10,7 @@ data:
         jenkins-serverless-gke/gcloud-activiti: true
         jenkins-serverless-gke/gcloud-again: true
         jenkins-serverless-gke/gke-cluster-secret: true
+        jenkins-serverless-gke/gke-nine-oclock: true
         jenkins-serverless-gke/nodeapp: true
         jenkins-serverless-gke/nodeapp-night: true
         jenkins-serverless-gke/nodeapp3: true
@@ -37,6 +38,7 @@ data:
         jenkins-serverless-gke/gcloud-activiti: merge
         jenkins-serverless-gke/gcloud-again: merge
         jenkins-serverless-gke/gke-cluster-secret: merge
+        jenkins-serverless-gke/gke-nine-oclock: merge
         jenkins-serverless-gke/nodeapp: merge
         jenkins-serverless-gke/nodeapp-night: merge
         jenkins-serverless-gke/nodeapp3: merge
@@ -63,6 +65,7 @@ data:
         - jenkins-serverless-gke/gke-cluster-secret
         - jenkins-serverless-gke/gcloud-activiti
         - jenkins-serverless-gke/gcloud-again
+        - jenkins-serverless-gke/gke-nine-oclock
         - jenkins-serverless-gke/nodeapp-night
         - jenkins-serverless-gke/nodeapp
         - jenkins-serverless-gke/nodeapp3
@@ -88,6 +91,7 @@ data:
         - jenkins-serverless-gke/gke-cluster-secret
         - jenkins-serverless-gke/gcloud-activiti
         - jenkins-serverless-gke/gcloud-again
+        - jenkins-serverless-gke/gke-nine-oclock
         - jenkins-serverless-gke/nodeapp-night
         - jenkins-serverless-gke/nodeapp
         - jenkins-serverless-gke/nodeapp3
