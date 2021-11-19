@@ -6,7 +6,7 @@ spec:
   # custom quickstarts
   quickstarts:
   - name: cheese
-    language: JavaScript
+    language: Java
     downloadZipURL: https://github.com/Activiti/activiti-cloud-application/archive/refs/heads/develop.zip
 
 
