@@ -16,6 +16,7 @@ data:
         jenkins-serverless-gke/twitter-ui: true
         serverless-bot-726/activiti-cloud-gke: true
         serverless-bot-726/activiti-gke: true
+        serverless-bot-726/gke-cloud: true
         serverless-bot-726/nodenewapp: true
         serverless-bot-726/twitter-dashboard-ui: true
     plank: {}
@@ -38,6 +39,7 @@ data:
         jenkins-serverless-gke/twitter-ui: merge
         serverless-bot-726/activiti-cloud-gke: merge
         serverless-bot-726/activiti-gke: merge
+        serverless-bot-726/gke-cloud: merge
         serverless-bot-726/nodenewapp: merge
         serverless-bot-726/twitter-dashboard-ui: merge
       queries:
@@ -59,6 +61,7 @@ data:
         - jenkins-serverless-gke/twitter-ui
         - serverless-bot-726/activiti-cloud-gke
         - serverless-bot-726/activiti-gke
+        - serverless-bot-726/gke-cloud
         - serverless-bot-726/nodenewapp
         - serverless-bot-726/twitter-dashboard-ui
       - labels:
@@ -79,6 +82,7 @@ data:
         - jenkins-serverless-gke/twitter-ui
         - serverless-bot-726/activiti-cloud-gke
         - serverless-bot-726/activiti-gke
+        - serverless-bot-726/gke-cloud
         - serverless-bot-726/nodenewapp
         - serverless-bot-726/twitter-dashboard-ui
       target_url: http://lighthouse-jx.34.132.47.65.nip.io/merge/status
