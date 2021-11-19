@@ -21,6 +21,7 @@ spec:
     repositories:
     - name: activiti-cloud-gke
     - name: activiti-gke
+    - name: gke-cloud
     - name: nodenewapp
     - name: twitter-dashboard-ui
     scheduler: in-repo
