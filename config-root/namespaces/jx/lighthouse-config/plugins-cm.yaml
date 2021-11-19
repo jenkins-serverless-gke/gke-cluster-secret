@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-serverless-gke/gcloud-activiti
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-serverless-gke/nodeapp-night
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -60,6 +64,11 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      jenkins-serverless-gke/gcloud-activiti:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       jenkins-serverless-gke/gke-cluster-secret:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -125,6 +134,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      jenkins-serverless-gke/gcloud-activiti:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-serverless-gke/gke-cluster-secret:
       - config-updater
       - approve
@@ -329,6 +354,9 @@ data:
     triggers:
     - repos:
       - jenkins-serverless-gke/gke-cluster-secret
+      trusted_org: todo
+    - repos:
+      - jenkins-serverless-gke/gcloud-activiti
       trusted_org: todo
     - repos:
       - jenkins-serverless-gke/nodeapp-night
