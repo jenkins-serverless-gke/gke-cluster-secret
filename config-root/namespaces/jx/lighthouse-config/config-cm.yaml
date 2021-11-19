@@ -8,13 +8,16 @@ data:
     in_repo_config:
       enabled:
         jenkins-serverless-gke/gcloud-activiti: true
+        jenkins-serverless-gke/gcloud-again: true
         jenkins-serverless-gke/gke-cluster-secret: true
         jenkins-serverless-gke/nodeapp: true
         jenkins-serverless-gke/nodeapp-night: true
         jenkins-serverless-gke/nodeapp3: true
+        jenkins-serverless-gke/theNodeApp: true
         jenkins-serverless-gke/ttc-dashboard-ui: true
         jenkins-serverless-gke/twitter-angular-dashboard: true
         jenkins-serverless-gke/twitter-ui: true
+        jenkins-serverless-gke/yoYoYo: true
         serverless-bot-726/activiti-cloud-gke: true
         serverless-bot-726/activiti-gke: true
         serverless-bot-726/gke-cloud: true
@@ -32,13 +35,16 @@ data:
         skip-unknown-contexts: false
       merge_method:
         jenkins-serverless-gke/gcloud-activiti: merge
+        jenkins-serverless-gke/gcloud-again: merge
         jenkins-serverless-gke/gke-cluster-secret: merge
         jenkins-serverless-gke/nodeapp: merge
         jenkins-serverless-gke/nodeapp-night: merge
         jenkins-serverless-gke/nodeapp3: merge
+        jenkins-serverless-gke/theNodeApp: merge
         jenkins-serverless-gke/ttc-dashboard-ui: merge
         jenkins-serverless-gke/twitter-angular-dashboard: merge
         jenkins-serverless-gke/twitter-ui: merge
+        jenkins-serverless-gke/yoYoYo: merge
         serverless-bot-726/activiti-cloud-gke: merge
         serverless-bot-726/activiti-gke: merge
         serverless-bot-726/gke-cloud: merge
@@ -56,12 +62,15 @@ data:
         repos:
         - jenkins-serverless-gke/gke-cluster-secret
         - jenkins-serverless-gke/gcloud-activiti
+        - jenkins-serverless-gke/gcloud-again
         - jenkins-serverless-gke/nodeapp-night
         - jenkins-serverless-gke/nodeapp
         - jenkins-serverless-gke/nodeapp3
+        - jenkins-serverless-gke/theNodeApp
         - jenkins-serverless-gke/ttc-dashboard-ui
         - jenkins-serverless-gke/twitter-angular-dashboard
         - jenkins-serverless-gke/twitter-ui
+        - jenkins-serverless-gke/yoYoYo
         - serverless-bot-726/activiti-cloud-gke
         - serverless-bot-726/activiti-gke
         - serverless-bot-726/gke-cloud
@@ -78,12 +87,15 @@ data:
         repos:
         - jenkins-serverless-gke/gke-cluster-secret
         - jenkins-serverless-gke/gcloud-activiti
+        - jenkins-serverless-gke/gcloud-again
         - jenkins-serverless-gke/nodeapp-night
         - jenkins-serverless-gke/nodeapp
         - jenkins-serverless-gke/nodeapp3
+        - jenkins-serverless-gke/theNodeApp
         - jenkins-serverless-gke/ttc-dashboard-ui
         - jenkins-serverless-gke/twitter-angular-dashboard
         - jenkins-serverless-gke/twitter-ui
+        - jenkins-serverless-gke/yoYoYo
         - serverless-bot-726/activiti-cloud-gke
         - serverless-bot-726/activiti-gke
         - serverless-bot-726/gke-cloud

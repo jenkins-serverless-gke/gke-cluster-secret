@@ -17,6 +17,7 @@ spec:
     - name: ttc-dashboard-ui
     - name: twitter-angular-dashboard
     - name: twitter-ui
+    - name: yoYoYo
     scheduler: in-repo
   - owner: serverless-bot-726
     provider: https://github.com
