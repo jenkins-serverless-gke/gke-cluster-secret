@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: gcloud-activiti
+    - name: gcloud-again
     - name: nodeapp
     - name: nodeapp-night
     - name: nodeapp3
